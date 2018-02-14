@@ -1,0 +1,26 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AudioManager.cs">
+    <Files>
+      <File FileName="Assets\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\CameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Ninja.cs" Line="65" Column="65" />
+      <File FileName="Assets\PatrollerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\FireballController.cs" Line="1" Column="1" />
+      <File FileName="Assets\arrowController.cs" Line="1" Column="1" />
+      <File FileName="Assets\BeginnerArcherController.cs" Line="1" Column="1" />
+      <File FileName="Assets\AdvancedArcherController.cs" Line="1" Column="1" />
+      <File FileName="Assets\swordController.cs" Line="1" Column="1" />
+      <File FileName="Assets\LevelActivationScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\IntegratedBossController.cs" Line="104" Column="4" />
+      <File FileName="Assets\HeadbossController.cs" Line="195" Column="2" />
+      <File FileName="Assets\RobotBoss.cs" Line="93" Column="12" />
+      <File FileName="Assets\moveOnTouch.cs" Line="1" Column="1" />
+      <File FileName="Assets\AudioManager.cs" Line="23" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

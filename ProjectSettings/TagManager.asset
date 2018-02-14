@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PixelHeart
+  - Arrow
+  - Hostile
+  - AdvancedArcher
+  - RookieArcher
+  - Patroller
+  - Missile
+  - Fireball
+  - BigBoss
+  - BigBigBoss
+  - Level1
+  - platform
+  - Level2Transition
+  - Level2
+  - Level2Ninja
+  - Level3Ninja
+  - Level3Transition
+  - Level1Ninja
+  - MainMenu
+  - RestartMenu
+  - Level3
+  - PrebossSong
+  - BossSong
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
