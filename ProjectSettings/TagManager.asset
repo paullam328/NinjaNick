@@ -27,6 +27,7 @@ TagManager:
   - Level3
   - PrebossSong
   - BossSong
+  - BossHealthBar
   layers:
   - Default
   - TransparentFX

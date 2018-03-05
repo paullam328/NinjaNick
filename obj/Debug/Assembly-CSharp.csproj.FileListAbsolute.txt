@@ -33,3 +33,5 @@ C:\Users\paull\Desktop\Unity Shits\Resolution\Temp\bin\Debug\UnityEngine.HoloLen
 C:\Users\paull\Desktop\Unity Shits\Resolution\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\paull\Desktop\Unity Shits\Resolution\obj\Debug\Assembly-CSharp.dll
 C:\Users\paull\Desktop\Unity Shits\Resolution\obj\Debug\Assembly-CSharp.pdb
+C:\Users\paull\Desktop\Unity Shits\NinjaNick\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\paull\Desktop\Unity Shits\NinjaNick\obj\Debug\Assembly-CSharp.dll

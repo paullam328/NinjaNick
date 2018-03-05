@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IntegratedBossController : MonoBehaviour {
 
-	public int healthRemaining = 600;
+	public int healthRemaining;
 
 	public Transform[] points;
 	Transform currentPatrolPoint;
@@ -32,10 +32,14 @@ public class IntegratedBossController : MonoBehaviour {
 
 	public GameObject headBoss;
 	public bool headCanShoot;
+	int reachedTopCounter;
+	public int reachedTopQuantity;
+
+	public GameObject Healthbar;
 
 	// Use this for initialization
 	void Start () {
-		healthRemaining = 600;
+		healthRemaining = 1200;
 		dropdownDecrement = 0;
 		dropdownEnded = false;
 
@@ -43,6 +47,8 @@ public class IntegratedBossController : MonoBehaviour {
 		currentVerticalPatrolPoint = verticalPatrolPoints [verticalDestPoint];
 		direction = -1;
 		headCanShoot = false;
+
+		reachedTopCounter = 0;
 
 	}
 	
@@ -92,6 +98,9 @@ public class IntegratedBossController : MonoBehaviour {
 	void DropDown() {
 		if (Vector3.Distance (headBoss.transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) < 6.5f && !dropdownEnded) {
 			isDroppingDown = true;
+			foreach (Transform child in GameObject.FindGameObjectWithTag("BossHealthBar").transform) {
+				child.gameObject.SetActive (true);
+			}
 			/*if (GameObject.FindGameObjectWithTag ("PrebossSong") != null) {
 				GameObject.FindGameObjectWithTag ("PrebossSong").GetComponent<AudioSource> ().mute = true;
 				//GameObject.FindGameObjectWithTag ("PrebossSong").SetActive (false);
@@ -120,8 +129,12 @@ public class IntegratedBossController : MonoBehaviour {
 		if (Vector3.Distance (headBoss.transform.position, currentVerticalPatrolPoint.position) < 0.5f) {
 			headBoss.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
 			if (verticalDestPoint == 0) {
+				reachedTopCounter++;
 				headBoss.GetComponent<HeadbossController> ().shootCount = 0;
-				headCanShoot = true;
+				if (reachedTopCounter == reachedTopQuantity) {
+					headCanShoot = true;
+					reachedTopCounter = 0;
+				}
 				verticalDestPoint = 1;
 				currentVerticalPatrolPoint = verticalPatrolPoints [verticalDestPoint];
 				direction = -1;
